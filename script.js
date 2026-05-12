@@ -4,7 +4,7 @@ const taskList = document.getElementById('taskList');
 const totalTasksLabel = document.getElementById('totalTasks');
 const completedTasksLabel = document.getElementById('completedTasks');
 
-// Carrega as tarefas salvas no navegador ou inicia um array vazio
+
 let tasks = JSON.parse(localStorage.getItem('minhas_tarefas')) || [];
 
 function saveToLocalStorage() {
@@ -40,7 +40,7 @@ function renderTasks() {
     });
     
     updateStats();
-    saveToLocalStorage(); // Salva sempre que algo mudar
+    saveToLocalStorage(); 
 }
 
 function addTask() {
